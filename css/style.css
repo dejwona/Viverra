@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+	font-family: myriad pro;
+	font-weight: normal;
+}
+h2 {
+  text-align: center;
+}
+.main-banner {
+	background-image: url(../img/main-photo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+}
+.main-nav-logo {
+  padding-top: 7%;
+	font-size: 60pt;
+	text-align: center;
+}
+.main-nav-logo-item {
+  color: #77ff9c;
+}
+.main-nav {
+	color: white;
+}
+.main-nav-text {
+	font-size: 24pt;
+	line-height: 28pt;
+	text-align: center;
+}
+.main-nav-sub-text {
+	font-size: 14pt;
+  width: 80%;
+  margin: 0 auto;
+	text-align: center;
+  line-height: 22pt;
+}
+.main-nav-icon {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 7%;
+  margin-left: 8%;
+  padding-bottom: 30%;
+}
+/*icons*/
+.main-nav-item {
+  height: 150px;
+}
+.main-nav-icon-content {
+  cursor: pointer;
+  position: relative;
+  font-size: 14pt;
+	z-index: 25;
+	background-image: url("../img/sprite.png");
+  top: 62px;
+  left: 9px;
+  width: 71px;
+  height: 62px;
+}
+.main-nav-icon-content-text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  top:65px;
+  left: 0;
+  right:0;
+}
+.main-nav-icon-content-text a {
+  color: white;
+}
+.main-nav-icon .main-nav-icon-bghex {
+  margin-right: 85px;
+}
+.main-nav-icon-bghex {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+  margin: 1em auto;
+  width: 4.5em;
+  height: 7.7em;
+  border-radius: 1em/ .5em;
+  opacity: .35;
+  background: white;
+  transition: opacity .5s;
+  cursor: pointer;
+	transform: rotate(60deg);
+}
+.main-nav-icon-bghex:before, .main-nav-icon-bghex:after {
+	position: absolute;
+  width: inherit; height: inherit;
+  border-radius: inherit;
+  background: inherit;
+  content: '';
+}
+.main-nav-icon-bghex:before {
+  transform: rotate(60deg);
+}
+.main-nav-icon-bghex:after {
+  transform: rotate(-60deg);
+}
+.main-nav-icon-bghex:hover {
+	background-color: #492445;
+  opacity: 1;
+}
+/*menu*/
+.menu-item {
+  width: 100%;
+  margin:4% 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.menu-item li {
+	display: inline-block;
+	list-style-type: none;
+}
+.sub-banner {
+	background-image: url(../img/Bhagaskara-iwo_07.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
+  width: 100%;
+  color: white;
+  font-weight: 100;
+}
+.hex {
+  width:100%;
+  transform: rotate(30deg);
+  position: relative;
+  display: inline-flex;
+}
+.row-bg {
+  background-color: #eeeeee;
+}
+.about-text {
+
+}
+/*home-text*/
+.home-item {
+  position: relative;
+}
+.home-icon-content {
+  cursor: pointer;
+  position: relative;
+	background-image: url("../img/sprite.png");
+  z-index: 20;
+  top: 120px;
+  left: 97px;
+  width: 71px;
+  height: 62px;
+}
+.home-text {
+  text-align: center;
+}
+/*value*/
+.value-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.value {
+  width: 50%;
+}
+/*gallery*/
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.gallery-img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+.main-nav-logo {
+  font-size: 85pt;
+}
+.main-nav-text {
+  font-size: 40pt;
+  line-height: 44pt;
+}
+.main-nav-sub-text {
+  font-size: 18pt;
+  width: 60%;
+  padding-bottom: 10%;
+  line-height: 22pt;
+}
+.main-nav-item {
+  height: 262px;
+}
+.main-nav-icon {
+  width: 100%;
+  padding-left: 3%;
+  margin-left: 2%;
+  padding-bottom: 16%;
+}
+.main-nav-icon-content {
+  top: 83px;
+  left: 22px;
+}
+.main-nav-icon-bghex {
+  width: 6.5em;
+  height: 11em;
+}
+/*value*/
+.value {
+  width: 25%;
+}
+/*gallery*/
+.gallery-img {
+  width: 32%;
+}
+
+}
