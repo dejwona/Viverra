@@ -54,10 +54,31 @@ h2 {
   font-size: 14pt;
 	z-index: 25;
 	background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
   top: 62px;
   left: 9px;
   width: 71px;
   height: 62px;
+}
+.icon-content-team {
+  background-position: -67px 0;
+  width: 67px;
+}
+.icon-content-services {
+  background-position: -131px 0;
+  width: 67px;
+}
+.icon-content-portfolio {
+  background-position: -192px 0;
+  width: 67px;
+}
+.icon-content-blog {
+  background-position: -260px 0;
+  width: 67px;
+}
+.icon-content-contact {
+  background-position: -323px 0;
+  width: 67px;
 }
 .main-nav-icon-content-text {
   position: absolute;
@@ -83,7 +104,7 @@ h2 {
   border-radius: 1em/ .5em;
   opacity: .35;
   background: white;
-  transition: opacity .5s;
+  */
   cursor: pointer;
 	transform: rotate(60deg);
 }
@@ -100,7 +121,11 @@ h2 {
 .main-nav-icon-bghex:after {
   transform: rotate(-60deg);
 }
-.main-nav-icon-bghex:hover {
+.main-nav-icon-bghex:active {
+	background-color: #492445;
+  opacity: 1;
+}
+.main-nav-icon-bghex--new {
 	background-color: #492445;
   opacity: 1;
 }
