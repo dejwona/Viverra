@@ -159,9 +159,6 @@ h1, h2 {
 .row-bg {
   background-color: #eeeeee;
 }
-.about-text {
-
-}
 /*home-text*/
 .home-item {
   padding:10% 0;
@@ -230,7 +227,6 @@ h1, h2 {
   height: 17px;
   width: 300px;
   margin: 0 auto 40px;
-
 }
 .skill-purple {
   background-color: #5f2154;
@@ -258,8 +254,11 @@ h1, h2 {
 .value-item {
   text-align: center;
 }
-.value-item .img-circle {
-  margin-bottom: 5%;
+.value-item .img-circle2 {
+ margin-bottom: 5%;
+ border-radius: 50%;
+ width: 25%;
+ margin-top: 8%;
 }
 .value {
   width: 50%;
@@ -269,7 +268,6 @@ h1, h2 {
   margin-bottom: 7%;
 }
 .value-circle-count-item {
-
   display: inline-block;
 	width: 8px;
 	height: 8px;
@@ -295,6 +293,39 @@ h1, h2 {
 }
 .gallery-img {
   width: 100%;
+}
+.about-but-watch {
+  background-color: #77ff9c;
+  font-size: 16px;
+  padding: 15px 50px;
+  color: white;
+  margin: 3% auto 3%;
+  display: flex;
+}
+/*form*/
+.form {
+  text-align: center;
+}
+.form-item {
+  width: 80%;
+  padding: 3%;
+  margin-bottom: 4%;
+}
+.form-but {
+  background-color: #9f449b;
+  margin-bottom: 11%;
+}
+.form-info {
+  padding: 0 10%;
+  text-align: center;
+}
+.form-info-text2 {
+  font-weight: 600;
+}
+.form-info-text3 {
+  font-weight: 600;
+  font-size: 18px;
+  padding-top: 3%;
 }
 
 @media (min-width: 768px) {
@@ -346,8 +377,10 @@ h1, h2 {
 .img-circle {
   width: 50%;
 }
-/*skills*/
 
+.value-item .img-circle2 {
+  width: 15%;
+}
 /*value*/
 .value {
   width: 25%;
@@ -356,11 +389,27 @@ h1, h2 {
 .gallery-img {
   width: 32%;
 }
+/*form*/
+.form  {
+  text-align: right;
+}
+.form-but {
+  background-color: #9f449b;
+  margin-bottom: 11%;
+  margin: 0;
+}
+.form-info {
+  padding: 0 3%;
+  text-align: left;
+}
 
 }
 @media (min-width: 990px) {
 .home-icon-love {
   top: 137px;
   left: 108px;
+}
+.img-circle2 {
+  width: 40%;
 }
 }
