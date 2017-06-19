@@ -172,13 +172,18 @@ h1, h2 {
   height: 62px;
 }
 .home-icon-wrap {
-  padding: 7% 0;
+  padding: 38% 7% 0;
 }
 .home-icon-love {
-  background-position: -323px 0;
-  width: 67px;
-  top: 57px;
-  left: 45px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  margin: -7em auto;
+  width: 4.5em;
+  z-index: 200;
+}
+.home .container .row .home-icon-wrap:last-child {
+  padding-bottom: 15%;
 }
 .home-text {
   text-align: center;
@@ -360,9 +365,14 @@ h1, h2 {
   height: 11em;
 }
 /*home*/
+.home-icon-wrap {
+  padding: 35% 7% 0;
+}
 .home-icon-love {
-  top: 105px;
-  left: 145px;
+  margin: -8.5em auto;
+}
+.home .container .row .home-icon-wrap:last-child {
+  padding-bottom: 10%;
 }
 /*about*/
 .about-text p {
@@ -405,10 +415,16 @@ h1, h2 {
 
 }
 @media (min-width: 990px) {
-.home-icon-love {
-  top: 137px;
-  left: 108px;
-}
+  /*home*/
+  .home-icon-wrap {
+    padding: 22% 2% 0;
+  }
+  .home-icon-love {
+    margin: -8.5em auto;
+  }
+  .home .container .row .home-icon-wrap:last-child {
+    padding-bottom: 7%;
+  }
 .img-circle2 {
   width: 40%;
 }
