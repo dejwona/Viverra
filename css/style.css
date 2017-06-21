@@ -57,7 +57,7 @@ h1, h2 {
 	background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   top: 62px;
-  left: 9px;
+  left: 6px;
   width: 71px;
   height: 62px;
 }
@@ -217,9 +217,17 @@ h1, h2 {
 .sub-banner .container h2 {
   padding-bottom: 8%;
 }
+.quote {
+  padding-top: 210px;
+  margin: -8.3em auto;
+}
 /*our team*/
 .our-team {
   text-align: center;
+  padding-bottom: 40px;
+}
+.social {
+  width: 40px;
 }
 .img-circle {
   border-radius: 50%;
@@ -229,13 +237,13 @@ h1, h2 {
 /*skills*/
 .skill-gray {
   background-color: lightgray;
-  height: 17px;
+  height: 14px;
   width: 300px;
-  margin: 0 auto 40px;
+  margin: 0 auto 90px;
 }
 .skill-purple {
   background-color: #5f2154;
-  height: 17px;
+  height: 14px;
   width: 180px;
 }
 .skill-item {
@@ -257,29 +265,27 @@ h1, h2 {
   padding-top: 12%;
 }
 .value-item {
+  padding: 0 0 90px;
   text-align: center;
 }
 .value-item .img-circle2 {
- margin-bottom: 5%;
- border-radius: 50%;
- width: 25%;
- margin-top: 8%;
+  display: inline !important;
+  margin-bottom: 5%;
+  border-radius: 50%;
+  width: 25%;
+  margin-top: 8%;
+}
+.carousel-indicators {
+  bottom: 40px;
+}
+.carousel-indicators li {
+  border: 1px solid gray;
+}
+.carousel-indicators .active {
+  background-color: gray
 }
 .value {
   width: 50%;
-}
-.value-circle-count {
-  padding-left: 0;
-  margin-bottom: 7%;
-}
-.value-circle-count-item {
-  display: inline-block;
-	width: 8px;
-	height: 8px;
-	background: gray;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
 }
 /*gallery*/
 .gallery {
@@ -306,6 +312,13 @@ h1, h2 {
   color: white;
   margin: 3% auto 3%;
   display: flex;
+
+}
+.scale-anm {
+  transform: scale(1);
+}
+.but-watch-wrap {
+  width: 100%;
 }
 /*form*/
 .form {
@@ -383,11 +396,12 @@ h1, h2 {
   margin: 3% 1.5%;
   display: inline-block;
 }
+/*subbanner*/
+
 /*our team*/
 .img-circle {
   width: 50%;
 }
-
 .value-item .img-circle2 {
   width: 15%;
 }

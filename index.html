@@ -162,6 +162,7 @@
     </section>
     <section class="container-fluid sub-banner">
       <div class="container">
+        <img class="home-icon-love quote" src="img/tel.png" />
         <div class="hex sub-banner-hex">
           <div class="main-nav-icon-bghex"></div>
         </div>
@@ -179,10 +180,10 @@
             <div>
               <img class="img-circle" src="img/a.jpg">
               <h4>Cameron Diaz</h4>
-              <p>fhdshdfd</p>
+              <p>Menager</p>
               <div>
-                  <div></div>
-                  <div></div>
+                  <img class="social" src="img/f.png">
+                  <img class="social" src="img/g.png">
               </div>
             </div>
           </div>
@@ -190,10 +191,10 @@
           <div>
               <img class="img-circle" src="img/b.jpg">
               <h4>Scarlett Johansson</h4>
-              <p>fhdshdfd</p>
+              <p>Director</p>
               <div>
-                  <div></div>
-                  <div></div>
+                  <img class="social" src="img/f.png">
+                  <img class="social" src="img/g.png">
               </div>
             </div>
           </div>
@@ -201,10 +202,10 @@
             <div>
               <img class="img-circle" src="img/c.jpg">
               <h4>Emma Watson</h4>
-              <p>fhdshdfd</p>
+              <p>CFO</p>
               <div>
-                  <div></div>
-                  <div></div>
+                  <img class="social" src="img/f.png">
+                  <img class="social" src="img/g.png">
               </div>
           </div>
         </div>
@@ -241,6 +242,7 @@
     </section>
     <section class="container-fluid sub-banner">
       <div class="container">
+        <img class="home-icon-love quote" src="img/tel.png" />
         <div class="hex sub-banner-hex">
           <div class="main-nav-icon-bghex"></div>
         </div>
@@ -248,80 +250,95 @@
       </div>
     </section>
     <section class="container-fluid row-bg">
-      <div class="container">
-        <div class="value-container">
-          <div class="value">
-            <h3>365</h3>
-            <p>Lorem ipsum<p>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="value-container">
+            <div class="value">
+              <h3>365</h3>
+              <p>Lorem ipsum<p>
+            </div>
+            <div class="value">
+              <h3>365</h3>
+              <p>Lorem ipsum<p>
+            </div>
+            <div class="value">
+              <h3>365</h3>
+              <p>Lorem ipsum<p>
+            </div>
+            <div class="value">
+              <h3>365</h3>
+              <p>Lorem ipsum<p>
+            </div>
           </div>
-          <div class="value">
-            <h3>365</h3>
-            <p>Lorem ipsum<p>
-          </div>
-          <div class="value">
-            <h3>365</h3>
-            <p>Lorem ipsum<p>
-          </div>
-          <div class="value">
-            <h3>365</h3>
-            <p>Lorem ipsum<p>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="item active value-item">
+                <img class="d-block img-circle2" src="img/a.jpg" alt="First slide">
+                <h4>"Mauris in risus leo. Donec commodo rutrum metus ut congue. Nulla lobortis, metus tempor dignissim tincidunt, augue urna luctus magna"</h4>
+                <p>Mauris in risus leo</p>
+              </div>
+              <div class="item value-item">
+                <img class="d-block img-circle2" src="img/b.jpg" alt="Second slide">
+                <h4>"Donec commodo rutrum metus ut congue. Nulla lobortis, metus tempor dignissim tincidunt, augue urna luctus magna"</h4>
+                <p>Mauris in risus leo</p>
+              </div>
+              <div class="item value-item">
+                <img class="d-block img-circle2" src="img/c.jpg" alt="Third slide">
+                <h4>"Mauris in risus leo. Donec commodo rutrum metus ut congue. Nulla lobortis, metus tempor dignissim tincidunt, augue urna luctus magna"</h4>
+                <p>Mauris in risus leo</p>
+              </div>
+            </div>
           </div>
         </div>
-          <div class="value-item">
-            <img class="img-circle2" src="img/a.jpg"/>
-            <p>"Mauris in risus leo. Donec commodo rutrum metus ut congue. Nulla lobortis, metus tempor dignissim tincidunt, augue urna luctus magna"</p>
-            <p>Mauris in risus leo</p>
-            <ul class="value-circle-count">
-              <li class="value-circle-count-item"></li>
-              <li class="value-circle-count-item"></li>
-              <li class="value-circle-count-item"></li>
-              <li class="value-circle-count-item"></li>
-              <li class="value-circle-count-item"></li>
-              <li class="value-circle-count-item"></li>
-            </ul>
-          </div>
       </div>
     </section>
     <section class="container">
       <h1>Our Portfolio</h1>
       <div class="portfolio-but-all">
-          <button class="btn btn-primary">All</button>
-          <button class="btn btn-primary">WEB</button>
-          <button class="btn btn-primary">APPS</button>
-          <button class="btn btn-primary">ICONS</button>
+          <button class="btn btn-primary btn-category" data-rel="all">All</button>
+          <button class="btn btn-primary btn-category" data-rel="web">WEB</button>
+          <button class="btn btn-primary btn-category" data-rel="apps">APPS</button>
+          <button class="btn btn-primary btn-category" data-rel="icons">ICONS</button>
       </div>
       <div class="gallery">
-          <div class="gallery-img">
+          <div class="gallery-img web all">
               <img class="img-responsive" src="img/Bhagaskara-iwo_10.jpg">
               <h4>tytul</h4>
               <p>opis</p>
           </div>
-          <div class="gallery-img">
+          <div class="gallery-img apps all">
               <img class="img-responsive" src="img/Bhagaskara-iwo_12.jpg">
               <h4>tytul</h4>
               <p>opis</p>
           </div>
-          <div class="gallery-img">
+          <div class="gallery-img apps all">
               <img class="img-responsive" src="img/Bhagaskara-iwo_14.jpg">
               <h4>tytul</h4>
               <p>opis</p>
           </div>
-          <div class="gallery-img">
+          <div class="gallery-img icons all">
               <img class="img-responsive" src="img/Bhagaskara-iwo_19.jpg">
               <h4>tytul</h4>
               <p>opis</p>
           </div>
-          <div class="gallery-img">
+          <div class="gallery-img icons all">
               <img class="img-responsive" src="img/Bhagaskara-iwo_20.jpg">
               <h4>tytul</h4>
               <p>opis</p>
           </div>
-          <div class="gallery-img">
+          <div class="gallery-img icons apps all">
               <img class="img-responsive" src="img/Bhagaskara-iwo_21.jpg">
               <h4>tytul</h4>
               <p>opis</p>
           </div>
-          <button class="btn about-but-watch">Watch more</button>
+      </div>
+      <div class="but-watch-wrap">
+         <button class="btn about-but-watch">Watch more</button>
       </div>
     </section>
     <section class="container">
@@ -347,9 +364,9 @@
             <p class="form-info-text3">T: 52 87879</p>
             <p class="form-info-text3">M: 8739743</p>
             <div>
-              <img src="img/f.png">
-              <img src="img/g.png">
-              <img src="img/t.png">
+              <img class="social" src="img/f.png">
+              <img class="social" src="img/g.png">
+              <img class="social" src="img/t.png">
             </div>
         </div>
       </div>
@@ -360,6 +377,7 @@
         </div>
     </footer>
   <script src="./external/jquery-3.1.1.min.js"></script>
-  <script src="./js/app.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
