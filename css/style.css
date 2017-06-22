@@ -7,6 +7,14 @@ h1, h2 {
   text-align: center;
   padding: 5% 0;
 }
+h1 a, h2 a {
+  color: black;
+}
+h1 a:hover, h2 a:hover {
+  text-decoration: none;
+  cursor: default;
+  color: black;
+}
 .main-banner {
 	background-image: url(../img/main-photo.jpg);
 	background-repeat: no-repeat;
@@ -20,7 +28,7 @@ h1, h2 {
 	text-align: center;
 }
 .main-nav-logo-item {
-  color: #77ff9c;
+  color: #1fda96;
 }
 .main-nav {
 	color: white;
@@ -88,6 +96,7 @@ h1, h2 {
   top:65px;
   left: 0;
   right:0;
+  color: white;
 }
 .main-nav-icon-content-text a {
   color: white;
@@ -132,15 +141,25 @@ h1, h2 {
 }
 /*menu*/
 .menu-item {
-  width: 100%;
-  margin:4% 0;
   padding: 0;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .menu-item li {
-	display: inline-block;
-	list-style-type: none;
+  padding: 5% 6% 3%;
+  font-size: 17px;
+  display: inline-block;
+  list-style-type: none;
+}
+.menu-item li a {
+  color: black;
+  cursor: pointer;
+}
+.menu-item li a:hover {
+  color: #9f449b;
+  text-decoration: none;
 }
 .sub-banner {
 	background-image: url(../img/Bhagaskara-iwo_07.jpg);
@@ -203,12 +222,17 @@ h1, h2 {
   text-align: center;
 }
 .about-but-learn {
-  background-color: #77ff9c;
+  background-color: #1fda96;
   font-size: 16px;
   padding: 15px 50px;
   color: white;
   margin: 6% auto;
   display: flex;
+  text-align: center;
+  width: 170px;
+}
+.about-show-more {
+  display: none;
 }
 /*subbanner*/
 .sub-banner-hex {
@@ -244,10 +268,65 @@ h1, h2 {
 .skill-purple {
   background-color: #5f2154;
   height: 14px;
+  width: 0;
+}
+.revealOnScroll {
+  opacity: 0;
+}
+.web-design {
+  -webkit-backface-visibility: visible !important;
+  -ms-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: persentages;
+  animation-name: persentages;
   width: 180px;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@keyframes persentages {
+  0% {
+    width: 0px;
+    opacity: 0;
+  }
+  100% {
+    width: 180px;
+    opacity: 1;
+  }
+}
+.html-css {
+  animation: persentagesB 2s;
+  width: 240px;
+}
+@keyframes persentagesB {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 240px;
+  }
+}
+.graphic-design {
+  animation: persentagesC 2s;
+  width: 300px;
+}
+@keyframes persentagesC {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 300px;
+  }
+}
+.uiux {
+  animation: persentagesB 2s;
+  width: 240px;
 }
 .skill-item {
-  padding: 0 0 7%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .skill-text {
   width: 300px;
@@ -255,7 +334,6 @@ h1, h2 {
   justify-content: space-between;
   margin: 0 auto;
 }
-
 /*value*/
 .value-container {
   display: flex;
@@ -302,11 +380,20 @@ h1, h2 {
   margin: 3% auto;
   text-align: center;
 }
+.btn-category {
+  background-color: #9f449b;
+  border: #9f449b;
+}
+.btn-category:hover, .btn-category:active {
+  background-color: #6f286c;
+  border: #6f286c;
+}
+
 .gallery-img {
   width: 100%;
 }
 .about-but-watch {
-  background-color: #77ff9c;
+  background-color: #1fda96;
   font-size: 16px;
   padding: 15px 50px;
   color: white;
@@ -377,6 +464,10 @@ h1, h2 {
   width: 6.5em;
   height: 11em;
 }
+/*menu*/
+.menu-item li {
+  padding: 5% 3% 3%;
+}
 /*home*/
 .home-icon-wrap {
   padding: 35% 7% 0;
@@ -429,6 +520,10 @@ h1, h2 {
 
 }
 @media (min-width: 990px) {
+  /*menu*/
+  .menu-item li {
+    padding: 5% 4% 3%;
+  }
   /*home*/
   .home-icon-wrap {
     padding: 22% 2% 0;

@@ -25,6 +25,18 @@ $(function() {
   }, 100);
   });
 
+  $("#example-one").on("click", function() {
+    var el = $(this);
+    if (el.text() == el.data("text-swap")) {
+      el.text(el.data("text-original"));
+      $('.about-show-more').css('display', 'none');
+    } else {
+      el.data("text-original", el.text());
+      el.text(el.data("text-swap"));
+      $('.about-show-more').css('display', 'block');
+    }
+  });
+
 	var selectedClass = "";
 
 	$(".btn-category").click(function(){
@@ -38,10 +50,30 @@ $(function() {
 
 });
 
+  var $window           = $(window),
+      win_height_padded = $window.height() * 1.1,
+      isTouch           = Modernizr.touch;
+ $window.on('scroll', revealOnScroll);
+
+ function revealOnScroll() {
+  var scrolled = $window.scrollTop();
+
+  $(".revealOnScroll:not(.web-design)").each(function () {
+    var $this     = $(this),
+        offsetTop = $this.offset().top;
+
+    if (scrolled + win_height_padded > offsetTop) {
+      if ($this.data('timeout')) {
+        window.setTimeout(function(){
+          $this.addClass('web-design ' + $this.data('animation'));
+        }, parseInt($this.data('timeout'),10));
+      } else {
+        $this.addClass('web-design ' + $this.data('animation'));
+      }
+    }
+  });
 
 
-
-
-
+}
 
 })
