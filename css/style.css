@@ -7,6 +7,12 @@ h1, h2 {
   text-align: center;
   padding: 5% 0;
 }
+a {
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+}
 h1 a, h2 a {
   color: black;
 }
@@ -14,6 +20,9 @@ h1 a:hover, h2 a:hover {
   text-decoration: none;
   cursor: default;
   color: black;
+}
+body {
+    overflow-x:hidden;
 }
 .main-banner {
 	background-image: url(../img/main-photo.jpg);
@@ -114,7 +123,6 @@ h1 a:hover, h2 a:hover {
   border-radius: 1em/ .5em;
   opacity: .35;
   background: white;
-  */
   cursor: pointer;
 	transform: rotate(60deg);
 }
@@ -165,7 +173,7 @@ h1 a:hover, h2 a:hover {
 	background-image: url(../img/Bhagaskara-iwo_07.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: auto;
+	height: 280px;
   width: 100%;
   color: white;
   font-weight: 100;
@@ -191,7 +199,7 @@ h1 a:hover, h2 a:hover {
   height: 62px;
 }
 .home-icon-wrap {
-  padding: 38% 7% 0;
+  padding: 50% 7% 0;
 }
 .home-icon-love {
   cursor: pointer;
@@ -243,7 +251,14 @@ h1 a:hover, h2 a:hover {
 }
 .quote {
   padding-top: 210px;
-  margin: -8.3em auto;
+  margin: -10.5em auto;
+  width: 45px;
+}
+.tech {
+  margin: 1.5em auto 2em;
+  position: relative;
+  top: 30px;
+  left: 21px;
 }
 /*our team*/
 .our-team {
@@ -274,27 +289,19 @@ h1 a:hover, h2 a:hover {
   opacity: 0;
 }
 .web-design {
-  -webkit-backface-visibility: visible !important;
-  -ms-backface-visibility: visible !important;
-  backface-visibility: visible !important;
-  -webkit-animation-name: persentages;
-  animation-name: persentages;
+  animation: persentages 2s;
   width: 180px;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
 }
+
 @keyframes persentages {
   0% {
     width: 0px;
-    opacity: 0;
   }
   100% {
     width: 180px;
-    opacity: 1;
   }
 }
+
 .html-css {
   animation: persentagesB 2s;
   width: 240px;
@@ -323,11 +330,7 @@ h1 a:hover, h2 a:hover {
   animation: persentagesB 2s;
   width: 240px;
 }
-.skill-item {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
+
 .skill-text {
   width: 300px;
   display: flex;
@@ -335,6 +338,10 @@ h1 a:hover, h2 a:hover {
   margin: 0 auto;
 }
 /*value*/
+.value-number {
+  font-size: 52px;
+  font-weight: 100;
+}
 .value-container {
   display: flex;
   justify-content: space-between;
@@ -432,7 +439,6 @@ h1 a:hover, h2 a:hover {
   font-size: 18px;
   padding-top: 3%;
 }
-
 @media (min-width: 768px) {
 .main-nav-logo {
   font-size: 85pt;
@@ -488,7 +494,24 @@ h1 a:hover, h2 a:hover {
   display: inline-block;
 }
 /*subbanner*/
-
+.quote {
+  padding-top: 228px;
+  margin: -6.5em auto !important;
+  width: 45px;
+}
+.sub-banner-text {
+  position: relative;
+  top: -100px;
+}
+.sub-banner {
+  height: 440px;
+}
+.tech {
+  margin: 2.5em auto 2em;
+  position: relative;
+  top: -71px;
+  left: -27px;
+}
 /*our team*/
 .img-circle {
   width: 50%;
@@ -517,7 +540,6 @@ h1 a:hover, h2 a:hover {
   padding: 0 3%;
   text-align: left;
 }
-
 }
 @media (min-width: 990px) {
   /*menu*/
@@ -537,4 +559,14 @@ h1 a:hover, h2 a:hover {
 .img-circle2 {
   width: 40%;
 }
+.tech {
+    margin: 3.5em auto 2em;
+    position: relative;
+    top: -99px;
+    left: -37px;
+}
+.sub-banner-text {
+    top: -120px;
+}
+
 }
